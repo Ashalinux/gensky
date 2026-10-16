@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340">
+  <style>
+    .title { font: 800 96px 'Segoe UI', Arial, sans-serif; fill: #ffffff; letter-spacing: -2px; }
+    .sub { font: 500 30px 'Segoe UI', Arial, sans-serif; fill: #CFE8FF; }
+    .ip { font: 600 26px Consolas, 'Fira Code', monospace; fill: #0B1D33; }
+    .fade { opacity: 0; animation: up 1s cubic-bezier(.2,.7,.2,1) forwards; }
+    .d2 { animation-delay: .4s; } .d3 { animation-delay: .8s; }
+    @keyframes up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+    .bob { animation: bob 5s ease-in-out infinite; }
+    .bob2 { animation: bob 6.5s ease-in-out infinite; animation-delay: -2s; }
+    @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+    .cloud { animation: drift 40s linear infinite; }
+    @keyframes drift { from { transform: translateX(-200px); } to { transform: translateX(1300px); } }
+  </style>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E5AA8"/>
+      <stop offset="1" stop-color="#5FA8E8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="340" rx="24" fill="url(#sky)"/>
+
+  <g class="cloud" opacity=".35" fill="#fff">
+    <rect x="0" y="50" width="120" height="24" rx="4"/><rect x="30" y="34" width="70" height="24" rx="4"/>
+  </g>
+  <g class="cloud" opacity=".25" fill="#fff" style="animation-delay:-18s">
+    <rect x="0" y="270" width="160" height="26" rx="4"/><rect x="40" y="252" width="80" height="24" rx="4"/>
+  </g>
+
+  <g transform="translate(72 0)">
+    <text class="title fade" x="0" y="150">Gensky.online</text>
+    <text class="sub fade d2" x="4" y="200">German generator Skyblock · own island · economy</text>
+    <g class="fade d3">
+      <rect x="0" y="228" width="300" height="50" rx="10" fill="#FFD84D"/>
+      <text class="ip" x="22" y="262">IP: gensky.online</text>
+    </g>
+  </g>
+
+  <!-- floating island -->
+  <g transform="translate(900 120)" class="bob">
+    <rect x="0" y="40" width="200" height="34" fill="#5BBF4A"/>
+    <rect x="0" y="74" width="200" height="40" fill="#8B5A2B"/>
+    <rect x="30" y="114" width="140" height="30" fill="#7A4E25"/>
+    <rect x="70" y="144" width="60" height="24" fill="#6B4320"/>
+    <rect x="40" y="-10" width="16" height="50" fill="#6B4320"/>
+    <rect x="16" y="-56" width="64" height="52" fill="#3E9B3A"/>
+    <rect x="140" y="12" width="28" height="28" fill="#9AA4AE"/>
+    <rect x="144" y="16" width="20" height="20" fill="#C4CCD3"/>
+  </g>
+  <g transform="translate(1110 60)" class="bob2">
+    <rect width="40" height="12" fill="#5BBF4A"/><rect y="12" width="40" height="16" fill="#8B5A2B"/>
+  </g>
+</svg>
